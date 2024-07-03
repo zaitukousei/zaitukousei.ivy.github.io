@@ -90,14 +90,31 @@ section {
     text-align: left;
 }
 
+.transparent-background {
+    background-color: rgba(255, 255, 255, 0.7); /* 背景色を白の半透明に設定 */
+    padding: 10px;
+    border-radius: 5px;
+}
+
 /* セクションのタイトル（虹色テキスト） */
 h2.rainbow-text {
     font-size: 24px;
-    color: blue; /* 青寄りの虹色に変更 */
+    font-weight: bold;
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 自己紹介セクションの設定 */
+#about {
+    background-color: rgba(255, 255, 255, 0.7); /* 背景を白の半透明に */
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
 /* フッターの設定 */
@@ -106,13 +123,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: lightgray;
 }
